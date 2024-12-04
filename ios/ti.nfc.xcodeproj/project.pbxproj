@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -22,6 +22,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		15A66E552D005A8D002F7287 /* TitaniumKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A66E542D005A8D002F7287 /* TitaniumKit.xcframework */; };
 		24DD6CF91134B3F500162E58 /* TiNfcModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* TiNfcModule.h */; };
 		24DD6CFA1134B3F500162E58 /* TiNfcModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* TiNfcModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* TiNfcModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* TiNfcModuleAssets.h */; };
@@ -70,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15A66E542D005A8D002F7287 /* TitaniumKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TitaniumKit.xcframework; path = "../../Library/Application Support/Titanium/mobilesdk/osx/12.5.1.GA/iphone/Frameworks/TitaniumKit.xcframework"; sourceTree = "<group>"; };
 		24DD6CF71134B3F500162E58 /* TiNfcModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiNfcModule.h; path = Classes/TiNfcModule.h; sourceTree = "<group>"; };
 		24DD6CF81134B3F500162E58 /* TiNfcModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiNfcModule.m; path = Classes/TiNfcModule.m; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15A66E552D005A8D002F7287 /* TitaniumKit.xcframework in Frameworks */,
 				DB2394562067C0680092DF6D /* CoreNFC.framework in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 			);
@@ -144,6 +147,7 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				15A66E542D005A8D002F7287 /* TitaniumKit.xcframework */,
 				DB856C3F1EE98B1700DE4334 /* CoreNFC.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
@@ -370,6 +374,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
@@ -418,6 +424,8 @@
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
