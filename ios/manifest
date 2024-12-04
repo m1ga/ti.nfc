@@ -9,7 +9,7 @@ description: ti.nfc
 author: Hans Knoechel
 license: Apache 2
 copyright: Copyright (c) 2017-present by Appcelerator
-mac: true
+mac: false
 
 # these should not be edited
 name: ti.nfc
